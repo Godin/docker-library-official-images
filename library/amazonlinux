@@ -1,21 +1,33 @@
-Maintainers: Amazon Linux Team <amazon-linux@amazon.com> (@aws),
-             iliana weller (@ilianaw),
-             Praveen K Paladugu (@praveen-pk),
-             Eric Warehime (@Eric-Warehime)
-GitRepo: https://github.com/aws/amazon-linux-docker-images.git
+Maintainers: Amazon Linux <amazon-linux@amazon.com> (@amazonlinux),
+             Frédérick Lefebvre (@fred-lefebvre),
+             Stewart Smith (@stewartsmith),
+             Christopher Miller (@mysteriouspants),
+             Sumit Tomer (@sktomer),
+             Tanu Rampal (@trampal),
+             Sam Thornton (@mrthornazon),
+             Preston Carpenter (@timidger),
+             Miriam Clark (@mgclark001),
+             Ade Adetayo (@dadetayo),
+             Jason Jiannuo Pei (@peijiannuo),
+             Michael Mammo (@MichaelAbebaw)
+GitRepo: https://github.com/amazonlinux/container-images.git
+GitCommit: cc7a1876866f4056fa73a789a5b758358151c189
 
-Tags: 2.0.20180622.1, 2, latest
-GitFetch: refs/heads/amzn2
-GitCommit: d59369b8dc1f3a41231d550274a565a349fb326b
+Tags: 2023, latest, 2023.7.20250512.0
+Architectures: amd64, arm64v8
+amd64-GitFetch: refs/heads/al2023
+amd64-GitCommit: dacb9d52e9344a2977503cb4ecfc0879b69de878
+arm64v8-GitFetch: refs/heads/al2023-arm64
+arm64v8-GitCommit: a37632ff24fdf2d838fe84fc358d8844ecdcd365
 
-Tags: 2.0.20180622.1-with-sources, 2-with-sources, with-sources
-GitFetch: refs/heads/amzn2-with-sources
-GitCommit: 54ffc6812a9912808ead357a6cb757c4db671121
+Tags: 2, 2.0.20250512.0
+Architectures: amd64, arm64v8
+amd64-GitFetch: refs/heads/amzn2
+amd64-GitCommit: 943ba6f33d9edd4b4dce773a0501b914af2d39f8
+arm64v8-GitFetch: refs/heads/amzn2-arm64
+arm64v8-GitCommit: 9194c0e5c6b27fe9a7c575b783debdf946cafe84
 
-Tags: 2018.03.0.20180622, 2018.03, 1
-GitFetch: refs/heads/2018.03
-GitCommit: 790dac3b115c84613ae36e48491db746e4b7503d
-
-Tags: 2018.03.0.20180622-with-sources, 2018.03-with-sources, 1-with-sources
-GitFetch: refs/heads/2018.03-with-sources
-GitCommit: 299dd79dcf37b9354decee89bc243b95c7cddbaf
+Tags: 1, 2018.03, 2018.03.0.20231218.0
+Architectures: amd64
+amd64-GitFetch: refs/heads/2018.03
+amd64-GitCommit: cfb41ad1c7624786ea10f60c15ce9c117c4da3b6

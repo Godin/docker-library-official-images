@@ -1,95 +1,39 @@
-# this file is generated via https://github.com/docker-solr/docker-solr/blob/c2db03b35db11ebd6b9ca95d17108c3e7d721cda/generate-stackbrew-library.sh
+# this file is generated via https://github.com/apache/solr-docker/blob/1758215f91ed62b184ffabac059b4fcb265c4649/generate-stackbrew-library.sh
 
-Maintainers: Martijn Koster <mak-github@greenhills.co.uk> (@makuk66),
-             Shalin Mangar <shalin@apache.org> (@shalinmangar)
-GitRepo: https://github.com/docker-solr/docker-solr.git
+Maintainers: The Apache Solr Project <dev@solr.apache.org> (@asfbot),
+ Shalin Mangar (@shalinmangar),
+ David Smiley (@dsmiley),
+ Jan Høydahl (@janhoy),
+ Houston Putman (@houstonputman)
+GitRepo: https://github.com/apache/solr-docker.git
+GitFetch: refs/heads/main
 
-Tags: 7.4.0, 7.4, 7, latest
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: dc31c84b54a469091a08de7c5b6c73b397e48162
-Directory: 7.4
+Tags: 9.8.1, 9.8, 9, latest
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: fd6589c6455c184356b93880265f17c645840405
+Directory: 9.8
 
-Tags: 7.4.0-alpine, 7.4-alpine, 7-alpine, alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: c2db03b35db11ebd6b9ca95d17108c3e7d721cda
-Directory: 7.4/alpine
+Tags: 9.8.1-slim, 9.8-slim, 9-slim, slim
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: fd6589c6455c184356b93880265f17c645840405
+Directory: 9.8-slim
 
-Tags: 7.4.0-slim, 7.4-slim, 7-slim, slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: dc31c84b54a469091a08de7c5b6c73b397e48162
-Directory: 7.4/slim
+Tags: 9.7.0, 9.7
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: cabde2a16c99aa974e1882df2c55ca17eab0bd17
+Directory: 9.7
 
-Tags: 7.3.1, 7.3
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: dc31c84b54a469091a08de7c5b6c73b397e48162
-Directory: 7.3
+Tags: 9.7.0-slim, 9.7-slim
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: cabde2a16c99aa974e1882df2c55ca17eab0bd17
+Directory: 9.7-slim
 
-Tags: 7.3.1-alpine, 7.3-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.3/alpine
+Tags: 8.11.4, 8.11, 8
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: f11dfe66709370492d5b7b251d5eba5d70b8301d
+Directory: 8.11
 
-Tags: 7.3.1-slim, 7.3-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: dc31c84b54a469091a08de7c5b6c73b397e48162
-Directory: 7.3/slim
-
-Tags: 7.2.1, 7.2
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.2
-
-Tags: 7.2.1-alpine, 7.2-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.2/alpine
-
-Tags: 7.2.1-slim, 7.2-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.2/slim
-
-Tags: 7.1.0, 7.1
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.1
-
-Tags: 7.1.0-alpine, 7.1-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.1/alpine
-
-Tags: 7.1.0-slim, 7.1-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 7.1/slim
-
-Tags: 6.6.4, 6.6, 6
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 88259161626bc9f6803076024f35c681feffa275
-Directory: 6.6
-
-Tags: 6.6.4-alpine, 6.6-alpine, 6-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 88259161626bc9f6803076024f35c681feffa275
-Directory: 6.6/alpine
-
-Tags: 6.6.4-slim, 6.6-slim, 6-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 88259161626bc9f6803076024f35c681feffa275
-Directory: 6.6/slim
-
-Tags: 5.5.5, 5.5, 5
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 5.5
-
-Tags: 5.5.5-alpine, 5.5-alpine, 5-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 5.5/alpine
-
-Tags: 5.5.5-slim, 5.5-slim, 5-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 48c50a7b2746470baa9b3e3573033e600dac75e9
-Directory: 5.5/slim
+Tags: 8.11.4-slim, 8.11-slim, 8-slim
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitCommit: f11dfe66709370492d5b7b251d5eba5d70b8301d
+Directory: 8.11-slim

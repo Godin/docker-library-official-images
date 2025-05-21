@@ -6,62 +6,45 @@
 $ ./run.sh
 
 usage: run.sh [-t test ...] image:tag [...]
-   ie: run.sh debian:wheezy
+   ie: run.sh debian:bookworm
        run.sh -t utc python:3
-       run.sh -t utc python:3 -t python-hy
+       run.sh -t utc python:3 -t python-imports
 
 This script processes the specified Docker images to test their running
 environments.
 ```
 
-Run all the tests that are applicable to the `debian:wheezy` image:
+Run all the tests that are applicable to the `debian:bookworm` image:
 
 ```console
-$ ./run.sh debian:wheezy
-testing debian:wheezy
-	'utc' [1/2]...passed
-	'cve-2014--shellshock' [2/2]...passed
+$ ./run.sh debian:bookworm
+testing debian:bookworm
+	'utc' [1/4]...passed
+	'no-hard-coded-passwords' [2/4]...passed
+	'override-cmd' [3/4]...passed
+	'debian-apt-get' [4/4]...passed
 ```
 
-Try to run just the `python-hy` test against the `debian:wheezy` image: (which doesn't contain Python)
+Try to run just the `python-imports` test against the `debian:bookworm` image: (which doesn't contain Python)
 
 ```console
-$ ./run.sh -t python-hy debian:wheezy
-testing debian:wheezy
+$ ./run.sh -t python-imports debian:bookworm
+testing debian:bookworm
+	image has no tests...skipping
 ```
 
-Run the `utc` test against both the `python:3` and `python:2` images:
+Run the `utc` and `python-imports` tests against `python:3`, `pypy:3`, and `debian:bookworm`:
 
 ```console
-$ ./run.sh -t utc python:3 python:2
-testing python:3
-	'utc' [1/1]...passed
-testing python:2
-	'utc' [1/1]...passed
-```
-
-Run the `utc` and `python-hy` tests against `python:3`, `python:2`, and `debian:wheezy`:
-
-```console
-$ ./run.sh -t utc -t python-hy python:3 python:2 debian:wheezy
+$ ./run.sh -t utc -t python-imports python:3 pypy:3 debian:bookworm
 testing python:3
 	'utc' [1/2]...passed
-	'python-hy' [2/2]...passed
-testing python:2
-	'utc' [1/2]...passed
-	'python-hy' [2/2]...passed
-testing debian:wheezy
-	'utc' [1/1]...passed
-```
-
-Run the `python-hy` test against `python:3` and `pypy:3`:
-
-```console
-$ ./run.sh -t python-hy python:3 pypy:3
-testing python:3
-	'python-hy' [1/1]...passed
+	'python-imports' [2/2]...passed
 testing pypy:3
-	'python-hy' [1/1]...passed
+	'utc' [1/2]...passed
+	'python-imports' [2/2]...passed
+testing debian:bookworm
+	'utc' [1/1]...passed
 ```
 
 ## Writing Tests
@@ -124,18 +107,14 @@ total 8
 -rw-rw-r-- 1 tianon tianon 167 Mar 11 13:24 container.hy
 -rw-rw-r-- 1 tianon tianon   5 Mar 11 13:24 expected-std-out.txt
 lrwxrwxrwx 1 tianon tianon  25 Mar 11 13:25 run.sh -> ../run-hy-in-container.sh
-$ ls -l tests/python-hy/
+$ ls -l tests/python-imports/
 total 4
-lrwxrwxrwx 1 tianon tianon 25 Mar 11 13:25 container.hy -> ../hylang-sh/container.hy
--rw-rw-r-- 1 tianon tianon 56 Mar 11 13:24 container.sh
-lrwxrwxrwx 1 tianon tianon 33 Mar 11 13:25 expected-std-out.txt -> ../hylang-sh/expected-std-out.txt
-lrwxrwxrwx 1 tianon tianon 27 Feb  5 16:52 run.sh -> ../run-bash-in-container.sh
-$ cat tests/python-hy/container.sh
-#!/bin/bash
-set -e
+-rw-r--r-- 1 tianon tianon 1096 Aug 29 16:14 container.py
+lrwxrwxrwx 1 tianon tianon   29 Dec 15  2016 run.sh -> ../run-python-in-container.sh
+$ head -n3 tests/python-imports/container.py
+import platform, sys
 
-pip install -q hy
-hy ./container.hy
+isWindows = platform.system() == 'Windows'
 ```
 
 ## Configuring the Test Suite
@@ -153,7 +132,7 @@ This list of tests applies to every image minus combinations listed in `globalEx
 ```bash
 globalTests+=(
 	utc
-	cve-2014--shellshock
+	no-hard-coded-passwords
 )
 ```
 
@@ -178,7 +157,7 @@ This array defines the list of explicit tests for each image. For example, the `
 ```bash
 imageTests+=(
 	[python]='
-		python-hy
+		python-imports
 		python-pip-requests-ssl
 	'
 	[mysql]='
@@ -195,7 +174,6 @@ Defines image+test combinations which shouldn't ever run (usually because they w
 globalExcludeTests+=(
 	# single-binary images
 	[hello-world_utc]=1
-	[swarm_utc]=1
 )
 ```
 

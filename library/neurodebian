@@ -1,57 +1,63 @@
 Maintainers: Yaroslav Halchenko <debian@onerussian.com> (@yarikoptic)
 GitRepo: https://github.com/neurodebian/dockerfiles.git
-GitCommit: 88af27888a5aee76924c3b6840fc47f9cd8f63cb
+GitCommit: 89ca52860d80889fd878392a29150e46d9d91a71
 
-Tags: trusty, nd14.04
-Directory: dockerfiles/trusty
+Tags: focal, nd20.04
+Architectures: amd64, arm64v8
+Directory: dockerfiles/focal
 
-Tags: trusty-non-free, nd14.04-non-free
-Directory: dockerfiles/trusty-non-free
+Tags: focal-non-free, nd20.04-non-free
+Architectures: amd64, arm64v8
+Directory: dockerfiles/focal-non-free
 
-Tags: xenial, nd16.04
-Directory: dockerfiles/xenial
+Tags: jammy, nd22.04
+Architectures: amd64, arm64v8
+Directory: dockerfiles/jammy
 
-Tags: xenial-non-free, nd16.04-non-free
-Directory: dockerfiles/xenial-non-free
+Tags: jammy-non-free, nd22.04-non-free
+Architectures: amd64, arm64v8
+Directory: dockerfiles/jammy-non-free
 
-Tags: artful, nd17.10
-Directory: dockerfiles/artful
+Tags: noble, nd24.04
+Architectures: amd64, arm64v8
+Directory: dockerfiles/noble
 
-Tags: artful-non-free, nd17.10-non-free
-Directory: dockerfiles/artful-non-free
+Tags: noble-non-free, nd24.04-non-free
+Architectures: amd64, arm64v8
+Directory: dockerfiles/noble-non-free
 
-Tags: bionic, nd18.04
-Directory: dockerfiles/bionic
+Tags: bullseye, nd110
+Architectures: amd64, arm64v8, i386
+Directory: dockerfiles/bullseye
 
-Tags: bionic-non-free, nd18.04-non-free
-Directory: dockerfiles/bionic-non-free
+Tags: bullseye-non-free, nd110-non-free
+Architectures: amd64, arm64v8, i386
+Directory: dockerfiles/bullseye-non-free
 
-Tags: wheezy, nd70
-Directory: dockerfiles/wheezy
+Tags: bookworm, nd120, latest
+Architectures: amd64, arm64v8, i386
+Directory: dockerfiles/bookworm
 
-Tags: wheezy-non-free, nd70-non-free
-Directory: dockerfiles/wheezy-non-free
+Tags: bookworm-non-free, nd120-non-free, non-free
+Architectures: amd64, arm64v8, i386
+Directory: dockerfiles/bookworm-non-free
 
-Tags: jessie, nd80
-Directory: dockerfiles/jessie
-
-Tags: jessie-non-free, nd80-non-free
-Directory: dockerfiles/jessie-non-free
-
-Tags: stretch, nd90, latest
-Directory: dockerfiles/stretch
-
-Tags: stretch-non-free, nd90-non-free, non-free
-Directory: dockerfiles/stretch-non-free
-
-Tags: buster, nd100
-Directory: dockerfiles/buster
-
-Tags: buster-non-free, nd100-non-free
-Directory: dockerfiles/buster-non-free
-
-Tags: sid, nd
-Directory: dockerfiles/sid
-
-Tags: sid-non-free, nd-non-free
-Directory: dockerfiles/sid-non-free
+#
+# https://github.com/neurodebian/dockerfiles/issues/18
+# https://github.com/neurodebian/neurodebian/issues/97
+#
+#Tags: trixie, nd130
+#Architectures: amd64, arm64v8, i386
+#Directory: dockerfiles/trixie
+#
+#Tags: trixie-non-free, nd130-non-free
+#Architectures: amd64, arm64v8, i386
+#Directory: dockerfiles/trixie-non-free
+#
+#Tags: sid, nd
+#Architectures: amd64, arm64v8, i386
+#Directory: dockerfiles/sid
+#
+#Tags: sid-non-free, nd-non-free
+#Architectures: amd64, arm64v8, i386
+#Directory: dockerfiles/sid-non-free

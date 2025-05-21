@@ -1,12 +1,11 @@
 Maintainers: Elisey Zanko <elisey.zanko@gmail.com> (@31z4)
 GitRepo: https://github.com/31z4/zookeeper-docker.git
+Architectures: amd64, arm64v8, s390x, ppc64le
 
-Tags: 3.4.13, 3.4, latest
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: b918b07c1f86593b28e5c220fe4aa14d730f1db1
-Directory: 3.4.13
+Tags: 3.8.4, 3.8, 3.8.4-jre-17, 3.8-jre-17
+GitCommit: ec1050affd761a7886c1f1f5d18165c19d3143e8
+Directory: 3.8.4
 
-Tags: 3.5.4-beta, 3.5
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: a652774b1836746c51c52382a52c77a332de891e
-Directory: 3.5.4-beta
+Tags: 3.9.3, 3.9, 3.9.3-jre-17, 3.9-jre-17, latest
+GitCommit: 268d33caa089426f4f173ba0bac9277919f88dc7
+Directory: 3.9.3

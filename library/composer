@@ -1,24 +1,23 @@
-# this file was generated using https://github.com/composer/docker/blob/1a7eff28d107b591cca5fa274a55f0c0bd501c8b/generate-manifest.sh
+# this file was generated using https://github.com/composer/docker/blob/9b3baa184302b6e57c1bd2bc00c9bb4077758849/generate-stackbrew-library.sh
 
 Maintainers: Composer (@composer), Rob Bast (@alcohol)
 GitRepo: https://github.com/composer/docker.git
+Builder: buildkit
 
-Tags: 1.7.1, 1.7, 1, latest
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le
-GitCommit: 1a90a09f7ca31795e8ae264336747ed59f5e4e69
-Directory: 1.7
+Tags: 2.2.25, 2.2, lts
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitFetch: refs/heads/main
+GitCommit: 15ee952ef914adfc785fd77e4a0b619401dcc194
+Directory: lts
 
-Tags: 1.6.5, 1.6
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le
-GitCommit: 615ac2f7541ce6fc9538e513326e3aa6a2bff749
-Directory: 1.6
+Tags: 1.10.27, 1.10, 1
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitFetch: refs/heads/main
+GitCommit: 15ee952ef914adfc785fd77e4a0b619401dcc194
+Directory: legacy
 
-Tags: 1.5.6, 1.5
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le
-GitCommit: 615ac2f7541ce6fc9538e513326e3aa6a2bff749
-Directory: 1.5
-
-Tags: 1.4.3, 1.4
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le
-GitCommit: 615ac2f7541ce6fc9538e513326e3aa6a2bff749
-Directory: 1.4
+Tags: 2.8.9, 2.8, 2, latest
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitFetch: refs/heads/main
+GitCommit: 100f579f6234b361017ae72b9de677ea04859ab7
+Directory: latest

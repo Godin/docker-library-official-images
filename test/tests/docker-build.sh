@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 # wrapper around "docker build" that creates a temporary directory and copies files into it first so that arbitrary host directories can be copied into containers without bind mounts, but accepts a Dockerfile on stdin
@@ -18,7 +18,7 @@ dir="$1"; shift
 
 imageTag="$1"; shift
 
-tmp="$(mktemp -t -d docker-library-test-build-XXXXXXXXXX)"
+tmp="$(mktemp -d "${TMPDIR:-/tmp}/docker-library-test-build-XXXXXXXXXX")"
 trap "rm -rf '$tmp'" EXIT
 
 cat > "$tmp/Dockerfile"
@@ -28,16 +28,6 @@ if ! docker inspect "$from" &> /dev/null; then
 	docker pull "$from" > /dev/null
 fi
 
-onbuilds="$(docker inspect -f '{{len .Config.OnBuild}}' "$from")"
-if [ "$onbuilds" -gt 0 ]; then
-	# crap, the image we want to build has some ONBUILD instructions
-	# those are kind of going to ruin our day
-	# let's do some hacks to strip those bad boys out in a new fake layer
-	"$(dirname "$(readlink -f "$BASH_SOURCE")")/remove-onbuild.sh" "$from" "$imageTag"
-	awk -F '[ \t]+' 'toupper($1) == "FROM" { $2 = "'"$imageTag"'" } { print }' "$tmp/Dockerfile" > "$tmp/Dockerfile.new"
-	mv "$tmp/Dockerfile.new" "$tmp/Dockerfile"
-fi
-
 cp -RL "$dir" "$tmp/dir"
 
-docker build -t "$imageTag" "$tmp" > /dev/null
+error="$(command docker build -t "$imageTag" "$tmp" 2>&1)" || { echo "$error" >&2; exit 1; }

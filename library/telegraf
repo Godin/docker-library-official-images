@@ -1,24 +1,29 @@
-Maintainers: Jonathan A. Sternberg <jonathan@influxdata.com> (@jsternberg)
-GitRepo: git://github.com/influxdata/influxdata-docker
-GitCommit: e5d6a13bf50a061b1860b5f7dc9eda3d7e10a826
+Maintainers: Sven Rebhan <srebhan@influxdata.com> (@srebhan),
+             Maya Strandboge <mstrandboge@influxdata.com> (@mstrandboge),
+             Sunil Kartikey <skartikey@influxdata.com> (@skartikey)
+GitRepo: https://github.com/influxdata/influxdata-docker.git
+GitCommit: 0b65fafca00f144c68229b06d52af77b47b97e02
 
-Tags: 1.5, 1.5.3
+Tags: 1.32, 1.32.3
 Architectures: amd64, arm32v7, arm64v8
-Directory: telegraf/1.5
+Directory: telegraf/1.32
 
-Tags: 1.5-alpine, 1.5.3-alpine
-Directory: telegraf/1.5/alpine
+Tags: 1.32-alpine, 1.32.3-alpine
+Architectures: amd64, arm64v8
+Directory: telegraf/1.32/alpine
 
-Tags: 1.6, 1.6.4
+Tags: 1.33, 1.33.3
 Architectures: amd64, arm32v7, arm64v8
-Directory: telegraf/1.6
+Directory: telegraf/1.33
 
-Tags: 1.6-alpine, 1.6.4-alpine
-Directory: telegraf/1.6/alpine
+Tags: 1.33-alpine, 1.33.3-alpine
+Architectures: amd64, arm64v8
+Directory: telegraf/1.33/alpine
 
-Tags: 1.7, 1.7.3, latest
+Tags: 1.34, 1.34.4, latest
 Architectures: amd64, arm32v7, arm64v8
-Directory: telegraf/1.7
+Directory: telegraf/1.34
 
-Tags: 1.7-alpine, 1.7.3-alpine, alpine
-Directory: telegraf/1.7/alpine
+Tags: 1.34-alpine, 1.34.4-alpine, alpine
+Architectures: amd64, arm64v8
+Directory: telegraf/1.34/alpine

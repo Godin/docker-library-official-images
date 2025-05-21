@@ -1,212 +1,264 @@
-# this file is generated via https://github.com/docker-library/python/blob/49cb32fb9c5e401178ba352d5b9e95396a74412b/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/python/blob/90aa427282f3f8283652c97011a511a77ea699b8/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/python.git
+Builder: buildkit
 
-Tags: 3.7.0-stretch, 3.7-stretch, 3-stretch, stretch
-SharedTags: 3.7.0, 3.7, 3, latest
+Tags: 3.14.0b1-bookworm, 3.14-rc-bookworm
+SharedTags: 3.14.0b1, 3.14-rc
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 8601079d1f70b03c01408377716a3243ce75cec9
-Directory: 3.7/stretch
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/bookworm
 
-Tags: 3.7.0-slim-stretch, 3.7-slim-stretch, 3-slim-stretch, slim-stretch, 3.7.0-slim, 3.7-slim, 3-slim, slim
+Tags: 3.14.0b1-slim-bookworm, 3.14-rc-slim-bookworm, 3.14.0b1-slim, 3.14-rc-slim
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: c5afee6efc8512af143b960d82b938bde623943f
-Directory: 3.7/stretch/slim
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/slim-bookworm
 
-Tags: 3.7.0-alpine3.8, 3.7-alpine3.8, 3-alpine3.8, alpine3.8, 3.7.0-alpine, 3.7-alpine, 3-alpine, alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: c5afee6efc8512af143b960d82b938bde623943f
-Directory: 3.7/alpine3.8
+Tags: 3.14.0b1-bullseye, 3.14-rc-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/bullseye
 
-Tags: 3.7.0-alpine3.7, 3.7-alpine3.7, 3-alpine3.7, alpine3.7
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: c5afee6efc8512af143b960d82b938bde623943f
-Directory: 3.7/alpine3.7
+Tags: 3.14.0b1-slim-bullseye, 3.14-rc-slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/slim-bullseye
 
-Tags: 3.7.0-windowsservercore-ltsc2016, 3.7-windowsservercore-ltsc2016, 3-windowsservercore-ltsc2016, windowsservercore-ltsc2016
-SharedTags: 3.7.0-windowsservercore, 3.7-windowsservercore, 3-windowsservercore, windowsservercore, 3.7.0, 3.7, 3, latest
+Tags: 3.14.0b1-alpine3.21, 3.14-rc-alpine3.21, 3.14.0b1-alpine, 3.14-rc-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/alpine3.21
+
+Tags: 3.14.0b1-alpine3.20, 3.14-rc-alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.14-rc/alpine3.20
+
+Tags: 3.14.0b1-windowsservercore-ltsc2025, 3.14-rc-windowsservercore-ltsc2025
+SharedTags: 3.14.0b1-windowsservercore, 3.14-rc-windowsservercore, 3.14.0b1, 3.14-rc
 Architectures: windows-amd64
-GitCommit: ccfb4c011e1db901c167c8d4c3611263bd68e65c
-Directory: 3.7/windows/windowsservercore-ltsc2016
-Constraints: windowsservercore-ltsc2016
+GitCommit: 0fb50d347fe0df6a92b492ed52d012cb4d502627
+Directory: 3.14-rc/windows/windowsservercore-ltsc2025
+Constraints: windowsservercore-ltsc2025
+Builder: classic
 
-Tags: 3.7.0-windowsservercore-1709, 3.7-windowsservercore-1709, 3-windowsservercore-1709, windowsservercore-1709
-SharedTags: 3.7.0-windowsservercore, 3.7-windowsservercore, 3-windowsservercore, windowsservercore, 3.7.0, 3.7, 3, latest
+Tags: 3.14.0b1-windowsservercore-ltsc2022, 3.14-rc-windowsservercore-ltsc2022
+SharedTags: 3.14.0b1-windowsservercore, 3.14-rc-windowsservercore, 3.14.0b1, 3.14-rc
 Architectures: windows-amd64
-GitCommit: ccfb4c011e1db901c167c8d4c3611263bd68e65c
-Directory: 3.7/windows/windowsservercore-1709
-Constraints: windowsservercore-1709
+GitCommit: 0fb50d347fe0df6a92b492ed52d012cb4d502627
+Directory: 3.14-rc/windows/windowsservercore-ltsc2022
+Constraints: windowsservercore-ltsc2022
+Builder: classic
 
-Tags: 3.6.6-stretch, 3.6-stretch
-SharedTags: 3.6.6, 3.6
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 878ffe36c2391279e673a44a011f5c65943b5eb8
-Directory: 3.6/stretch
-
-Tags: 3.6.6-slim-stretch, 3.6-slim-stretch, 3.6.6-slim, 3.6-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 8350b865d28bc0f4a05111398392ec701d449058
-Directory: 3.6/stretch/slim
-
-Tags: 3.6.6-jessie, 3.6-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 878ffe36c2391279e673a44a011f5c65943b5eb8
-Directory: 3.6/jessie
-
-Tags: 3.6.6-slim-jessie, 3.6-slim-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 8350b865d28bc0f4a05111398392ec701d449058
-Directory: 3.6/jessie/slim
-
-Tags: 3.6.6-alpine3.8, 3.6-alpine3.8, 3.6.6-alpine, 3.6-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 3.6/alpine3.8
-
-Tags: 3.6.6-alpine3.7, 3.6-alpine3.7
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 3.6/alpine3.7
-
-Tags: 3.6.6-alpine3.6, 3.6-alpine3.6
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 3.6/alpine3.6
-
-Tags: 3.6.6-windowsservercore-ltsc2016, 3.6-windowsservercore-ltsc2016
-SharedTags: 3.6.6-windowsservercore, 3.6-windowsservercore, 3.6.6, 3.6
+Tags: 3.14.0b1-windowsservercore-1809, 3.14-rc-windowsservercore-1809
+SharedTags: 3.14.0b1-windowsservercore, 3.14-rc-windowsservercore, 3.14.0b1, 3.14-rc
 Architectures: windows-amd64
-GitCommit: 878ffe36c2391279e673a44a011f5c65943b5eb8
-Directory: 3.6/windows/windowsservercore-ltsc2016
-Constraints: windowsservercore-ltsc2016
+GitCommit: 0fb50d347fe0df6a92b492ed52d012cb4d502627
+Directory: 3.14-rc/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+Builder: classic
 
-Tags: 3.6.6-windowsservercore-1709, 3.6-windowsservercore-1709
-SharedTags: 3.6.6-windowsservercore, 3.6-windowsservercore, 3.6.6, 3.6
+Tags: 3.13.3-bookworm, 3.13-bookworm, 3-bookworm, bookworm
+SharedTags: 3.13.3, 3.13, 3, latest
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/bookworm
+
+Tags: 3.13.3-slim-bookworm, 3.13-slim-bookworm, 3-slim-bookworm, slim-bookworm, 3.13.3-slim, 3.13-slim, 3-slim, slim
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/slim-bookworm
+
+Tags: 3.13.3-bullseye, 3.13-bullseye, 3-bullseye, bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/bullseye
+
+Tags: 3.13.3-slim-bullseye, 3.13-slim-bullseye, 3-slim-bullseye, slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/slim-bullseye
+
+Tags: 3.13.3-alpine3.21, 3.13-alpine3.21, 3-alpine3.21, alpine3.21, 3.13.3-alpine, 3.13-alpine, 3-alpine, alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/alpine3.21
+
+Tags: 3.13.3-alpine3.20, 3.13-alpine3.20, 3-alpine3.20, alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.13/alpine3.20
+
+Tags: 3.13.3-windowsservercore-ltsc2025, 3.13-windowsservercore-ltsc2025, 3-windowsservercore-ltsc2025, windowsservercore-ltsc2025
+SharedTags: 3.13.3-windowsservercore, 3.13-windowsservercore, 3-windowsservercore, windowsservercore, 3.13.3, 3.13, 3, latest
 Architectures: windows-amd64
-GitCommit: 878ffe36c2391279e673a44a011f5c65943b5eb8
-Directory: 3.6/windows/windowsservercore-1709
-Constraints: windowsservercore-1709
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.13/windows/windowsservercore-ltsc2025
+Constraints: windowsservercore-ltsc2025
+Builder: classic
 
-Tags: 3.5.6-stretch, 3.5-stretch
-SharedTags: 3.5.6, 3.5
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 2acdb940ae75704be5892378b4ff498861d74d64
-Directory: 3.5/stretch
-
-Tags: 3.5.6-slim-stretch, 3.5-slim-stretch, 3.5.6-slim, 3.5-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 2acdb940ae75704be5892378b4ff498861d74d64
-Directory: 3.5/stretch/slim
-
-Tags: 3.5.6-jessie, 3.5-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 2acdb940ae75704be5892378b4ff498861d74d64
-Directory: 3.5/jessie
-
-Tags: 3.5.6-slim-jessie, 3.5-slim-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 2acdb940ae75704be5892378b4ff498861d74d64
-Directory: 3.5/jessie/slim
-
-Tags: 3.5.6-alpine3.8, 3.5-alpine3.8, 3.5.6-alpine, 3.5-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: bc999321f00459f8fedb9f42142395d211173713
-Directory: 3.5/alpine3.8
-
-Tags: 3.5.6-alpine3.7, 3.5-alpine3.7
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: bc999321f00459f8fedb9f42142395d211173713
-Directory: 3.5/alpine3.7
-
-Tags: 3.4.9-stretch, 3.4-stretch
-SharedTags: 3.4.9, 3.4
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 88faa24df29998ef7840efd3bb204aa7ab9bf0b2
-Directory: 3.4/stretch
-
-Tags: 3.4.9-slim-stretch, 3.4-slim-stretch, 3.4.9-slim, 3.4-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 88faa24df29998ef7840efd3bb204aa7ab9bf0b2
-Directory: 3.4/stretch/slim
-
-Tags: 3.4.9-jessie, 3.4-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 88faa24df29998ef7840efd3bb204aa7ab9bf0b2
-Directory: 3.4/jessie
-
-Tags: 3.4.9-slim-jessie, 3.4-slim-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 88faa24df29998ef7840efd3bb204aa7ab9bf0b2
-Directory: 3.4/jessie/slim
-
-Tags: 3.4.9-wheezy, 3.4-wheezy
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 88faa24df29998ef7840efd3bb204aa7ab9bf0b2
-Directory: 3.4/wheezy
-
-Tags: 3.4.9-alpine3.8, 3.4-alpine3.8, 3.4.9-alpine, 3.4-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: bc999321f00459f8fedb9f42142395d211173713
-Directory: 3.4/alpine3.8
-
-Tags: 3.4.9-alpine3.7, 3.4-alpine3.7
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: bc999321f00459f8fedb9f42142395d211173713
-Directory: 3.4/alpine3.7
-
-Tags: 2.7.15-stretch, 2.7-stretch, 2-stretch
-SharedTags: 2.7.15, 2.7, 2
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 1565b7e3d9f9084dc141e8e75fd02bf49fe7f79a
-Directory: 2.7/stretch
-
-Tags: 2.7.15-slim-stretch, 2.7-slim-stretch, 2-slim-stretch, 2.7.15-slim, 2.7-slim, 2-slim
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 8350b865d28bc0f4a05111398392ec701d449058
-Directory: 2.7/stretch/slim
-
-Tags: 2.7.15-jessie, 2.7-jessie, 2-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 1565b7e3d9f9084dc141e8e75fd02bf49fe7f79a
-Directory: 2.7/jessie
-
-Tags: 2.7.15-slim-jessie, 2.7-slim-jessie, 2-slim-jessie
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 8350b865d28bc0f4a05111398392ec701d449058
-Directory: 2.7/jessie/slim
-
-Tags: 2.7.15-wheezy, 2.7-wheezy, 2-wheezy
-Architectures: amd64, arm32v5, arm32v7, i386
-GitCommit: 1565b7e3d9f9084dc141e8e75fd02bf49fe7f79a
-Directory: 2.7/wheezy
-
-Tags: 2.7.15-alpine3.8, 2.7-alpine3.8, 2-alpine3.8, 2.7.15-alpine, 2.7-alpine, 2-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 2.7/alpine3.8
-
-Tags: 2.7.15-alpine3.7, 2.7-alpine3.7, 2-alpine3.7
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 2.7/alpine3.7
-
-Tags: 2.7.15-alpine3.6, 2.7-alpine3.6, 2-alpine3.6
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 6076ae65aced0eea263bd254c89311e66f4c8e64
-Directory: 2.7/alpine3.6
-
-Tags: 2.7.15-windowsservercore-ltsc2016, 2.7-windowsservercore-ltsc2016, 2-windowsservercore-ltsc2016
-SharedTags: 2.7.15-windowsservercore, 2.7-windowsservercore, 2-windowsservercore, 2.7.15, 2.7, 2
+Tags: 3.13.3-windowsservercore-ltsc2022, 3.13-windowsservercore-ltsc2022, 3-windowsservercore-ltsc2022, windowsservercore-ltsc2022
+SharedTags: 3.13.3-windowsservercore, 3.13-windowsservercore, 3-windowsservercore, windowsservercore, 3.13.3, 3.13, 3, latest
 Architectures: windows-amd64
-GitCommit: 1565b7e3d9f9084dc141e8e75fd02bf49fe7f79a
-Directory: 2.7/windows/windowsservercore-ltsc2016
-Constraints: windowsservercore-ltsc2016
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.13/windows/windowsservercore-ltsc2022
+Constraints: windowsservercore-ltsc2022
+Builder: classic
 
-Tags: 2.7.15-windowsservercore-1709, 2.7-windowsservercore-1709, 2-windowsservercore-1709
-SharedTags: 2.7.15-windowsservercore, 2.7-windowsservercore, 2-windowsservercore, 2.7.15, 2.7, 2
+Tags: 3.13.3-windowsservercore-1809, 3.13-windowsservercore-1809, 3-windowsservercore-1809, windowsservercore-1809
+SharedTags: 3.13.3-windowsservercore, 3.13-windowsservercore, 3-windowsservercore, windowsservercore, 3.13.3, 3.13, 3, latest
 Architectures: windows-amd64
-GitCommit: 1565b7e3d9f9084dc141e8e75fd02bf49fe7f79a
-Directory: 2.7/windows/windowsservercore-1709
-Constraints: windowsservercore-1709
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.13/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+Builder: classic
+
+Tags: 3.12.10-bookworm, 3.12-bookworm
+SharedTags: 3.12.10, 3.12
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/bookworm
+
+Tags: 3.12.10-slim-bookworm, 3.12-slim-bookworm, 3.12.10-slim, 3.12-slim
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/slim-bookworm
+
+Tags: 3.12.10-bullseye, 3.12-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/bullseye
+
+Tags: 3.12.10-slim-bullseye, 3.12-slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/slim-bullseye
+
+Tags: 3.12.10-alpine3.21, 3.12-alpine3.21, 3.12.10-alpine, 3.12-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/alpine3.21
+
+Tags: 3.12.10-alpine3.20, 3.12-alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.12/alpine3.20
+
+Tags: 3.12.10-windowsservercore-ltsc2025, 3.12-windowsservercore-ltsc2025
+SharedTags: 3.12.10-windowsservercore, 3.12-windowsservercore, 3.12.10, 3.12
+Architectures: windows-amd64
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.12/windows/windowsservercore-ltsc2025
+Constraints: windowsservercore-ltsc2025
+Builder: classic
+
+Tags: 3.12.10-windowsservercore-ltsc2022, 3.12-windowsservercore-ltsc2022
+SharedTags: 3.12.10-windowsservercore, 3.12-windowsservercore, 3.12.10, 3.12
+Architectures: windows-amd64
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.12/windows/windowsservercore-ltsc2022
+Constraints: windowsservercore-ltsc2022
+Builder: classic
+
+Tags: 3.12.10-windowsservercore-1809, 3.12-windowsservercore-1809
+SharedTags: 3.12.10-windowsservercore, 3.12-windowsservercore, 3.12.10, 3.12
+Architectures: windows-amd64
+GitCommit: 70fc099be48e4a130afd949a4dd3c6afe6935b8a
+Directory: 3.12/windows/windowsservercore-1809
+Constraints: windowsservercore-1809
+Builder: classic
+
+Tags: 3.11.12-bookworm, 3.11-bookworm
+SharedTags: 3.11.12, 3.11
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/bookworm
+
+Tags: 3.11.12-slim-bookworm, 3.11-slim-bookworm, 3.11.12-slim, 3.11-slim
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/slim-bookworm
+
+Tags: 3.11.12-bullseye, 3.11-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/bullseye
+
+Tags: 3.11.12-slim-bullseye, 3.11-slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/slim-bullseye
+
+Tags: 3.11.12-alpine3.21, 3.11-alpine3.21, 3.11.12-alpine, 3.11-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/alpine3.21
+
+Tags: 3.11.12-alpine3.20, 3.11-alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.11/alpine3.20
+
+Tags: 3.10.17-bookworm, 3.10-bookworm
+SharedTags: 3.10.17, 3.10
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/bookworm
+
+Tags: 3.10.17-slim-bookworm, 3.10-slim-bookworm, 3.10.17-slim, 3.10-slim
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/slim-bookworm
+
+Tags: 3.10.17-bullseye, 3.10-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/bullseye
+
+Tags: 3.10.17-slim-bullseye, 3.10-slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/slim-bullseye
+
+Tags: 3.10.17-alpine3.21, 3.10-alpine3.21, 3.10.17-alpine, 3.10-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/alpine3.21
+
+Tags: 3.10.17-alpine3.20, 3.10-alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 90aa427282f3f8283652c97011a511a77ea699b8
+Directory: 3.10/alpine3.20
+
+Tags: 3.9.22-bookworm, 3.9-bookworm
+SharedTags: 3.9.22, 3.9
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/bookworm
+
+Tags: 3.9.22-slim-bookworm, 3.9-slim-bookworm, 3.9.22-slim, 3.9-slim
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/slim-bookworm
+
+Tags: 3.9.22-bullseye, 3.9-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/bullseye
+
+Tags: 3.9.22-slim-bullseye, 3.9-slim-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/slim-bullseye
+
+Tags: 3.9.22-alpine3.21, 3.9-alpine3.21, 3.9.22-alpine, 3.9-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/alpine3.21
+
+Tags: 3.9.22-alpine3.20, 3.9-alpine3.20
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 5f041dab48cbaa33eef235fb94ddf07c61a53ad7
+Directory: 3.9/alpine3.20

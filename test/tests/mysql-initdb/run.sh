@@ -31,9 +31,10 @@ trap "docker rm -vf $cid > /dev/null" EXIT
 mysql() {
 	docker run --rm -i \
 		--link "$cname":mysql \
-		--entrypoint mysql \
+		--entrypoint sh \
 		-e MYSQL_PWD="$MYSQL_PASSWORD" \
 		"$image" \
+		-euc 'if command -v mariadb > /dev/null; then exec mariadb "$@"; else exec mysql "$@"; fi' -- \
 		-hmysql \
 		-u"$MYSQL_USER" \
 		--silent \
@@ -41,7 +42,7 @@ mysql() {
 		"$MYSQL_DATABASE"
 }
 
-. "$dir/../../retry.sh" --tries 20 "echo 'SELECT 1' | mysql"
+. "$dir/../../retry.sh" --tries 30 "echo 'SELECT 1' | mysql"
 
 [ "$(echo 'SELECT COUNT(*) FROM test' | mysql)" = 1 ]
 [ "$(echo 'SELECT c FROM test' | mysql)" = 'goodbye!' ]

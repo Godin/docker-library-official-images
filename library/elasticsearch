@@ -1,21 +1,24 @@
-# this file is generated via https://github.com/docker-library/elasticsearch/blob/47a72b6f1962df04a62616b1c3c32e85b5410639/generate-stackbrew-library.sh
+Maintainers: Mark Vieira (@mark-vieira)
+GitRepo: https://github.com/elastic/dockerfiles.git
+Directory: elasticsearch
+Builder: buildkit
 
-Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
-             Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
-GitRepo: https://github.com/docker-library/elasticsearch.git
+Tags: 7.17.28
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/7.17
+GitCommit: 2ef7e0a0be5abd21cb38a39c3cce65d5278ebfee
 
-Tags: 5.6.10, 5.6, 5, latest
-GitCommit: be1eb53a6a62a57d0ed17e4287d3fc51a7409a9f
-Directory: 5
+Tags: 8.17.6
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8.17
+GitCommit: d7216d19313f88d63f43b52df31da2b4ae6ace3c
 
-Tags: 5.6.10-alpine, 5.6-alpine, 5-alpine, alpine
-GitCommit: be1eb53a6a62a57d0ed17e4287d3fc51a7409a9f
-Directory: 5/alpine
+Tags: 8.18.1
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8.18
+GitCommit: bba6738fb5c2e6202a324f07fa028aa36bd1716f
 
-Tags: 2.4.6, 2.4, 2
-GitCommit: 8e87587ac5d6b44a8382a229162c88e65618c30a
-Directory: 2.4
-
-Tags: 2.4.6-alpine, 2.4-alpine, 2-alpine
-GitCommit: 8e87587ac5d6b44a8382a229162c88e65618c30a
-Directory: 2.4/alpine
+Tags: 9.0.1
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/9.0
+GitCommit: c1767391264142d319c5aebbc7b44ff935ecb40d

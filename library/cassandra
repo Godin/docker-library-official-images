@@ -1,25 +1,30 @@
-# this file is generated via https://github.com/docker-library/cassandra/blob/deeb9b3ede9118ce4f642860d74c8513d39461b8/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/cassandra/blob/75187df9c5b4b5200e1c59fd46163f087d4f798a/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/cassandra.git
 
-Tags: 2.1.20, 2.1
-Architectures: amd64, arm64v8, i386
-GitCommit: 986cea9cdfbf38ae611bdfbd14f1b1cc17194e0c
-Directory: 2.1
+Tags: 5.0.4, 5.0, 5, latest, 5.0.4-jammy, 5.0-jammy, 5-jammy, jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 0f32c04c976068ddf4b094044bd333ca46d42887
+Directory: 5.0
 
-Tags: 2.2.13, 2.2, 2
-Architectures: amd64, i386
-GitCommit: 9182976ad885af573aaefaabd99432d0c3c2fa6a
-Directory: 2.2
+Tags: 4.1.9, 4.1, 4, 4.1.9-jammy, 4.1-jammy, 4-jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 8b125f8e4cb082768e6d299130722ed3547e2206
+Directory: 4.1
 
-Tags: 3.0.17, 3.0
-Architectures: amd64, arm64v8, i386, ppc64le
-GitCommit: 290059ff8dfece6b7db18365c7172fac0f007c83
-Directory: 3.0
+Tags: 4.0.17, 4.0, 4.0.17-jammy, 4.0-jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
+GitCommit: 4acdd8cbbc6f21083e9b8176452a2728fa08f2c7
+Directory: 4.0
 
-Tags: 3.11.3, 3.11, 3, latest
-Architectures: amd64, arm64v8, i386, ppc64le
-GitCommit: 4474c6c5cc2a81ee57c5615aae00555fca7e26a6
+Tags: 3.11.19, 3.11, 3, 3.11.19-jammy, 3.11-jammy, 3-jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 4acdd8cbbc6f21083e9b8176452a2728fa08f2c7
 Directory: 3.11
+
+Tags: 3.0.32, 3.0, 3.0.32-jammy, 3.0-jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 4acdd8cbbc6f21083e9b8176452a2728fa08f2c7
+Directory: 3.0

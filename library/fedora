@@ -1,40 +1,38 @@
-Maintainers: Adam Miller <maxamillion@fedoraproject.org> (@maxamillion),
-             Patrick Uiterwijk <puiterwijk@gmail.com> (@puiterwijk)
+Maintainers: Clement Verna <cverna@fedoraproject.org> (@cverna), Vipul Siddharth <siddharthvipul1@fedoraproject.org> (@siddharthvipul)
 GitRepo: https://github.com/fedora-cloud/docker-brew-fedora.git
-Constraints: !aufs
 
-Tags: 27
-Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitFetch: refs/heads/27
-GitCommit: 425644cb22f4f31db65671bb3df75de4ee5b9742
+Tags: 40
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/40
+GitCommit: f5bdda47877c6a4cbbdef5233fdcfb31e0a96040
 amd64-Directory: x86_64/
-arm32v7-Directory: armhfp/
 arm64v8-Directory: aarch64/
+s390x-Directory: s390x/
 ppc64le-Directory: ppc64le/
 
-Tags: 26
-Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitFetch: refs/heads/26
-GitCommit: 035aa2a3970e4e10a9a6ae0b79322b882bfe50d3
+Tags: 41
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/41
+GitCommit: 5aee3a684c041e0665d1af1350a245f2286fbf18
 amd64-Directory: x86_64/
-arm32v7-Directory: armhfp/
 arm64v8-Directory: aarch64/
+s390x-Directory: s390x/
 ppc64le-Directory: ppc64le/
 
-Tags: rawhide
-Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitFetch: refs/heads/rawhide
-GitCommit: a3db183bc886c67e9e326b39c59b7ceda5c64aa4
+Tags: 42, latest
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/42
+GitCommit: 010de8006c2c551b626959423a588bb773fcf412
 amd64-Directory: x86_64/
-arm32v7-Directory: armhfp/
 arm64v8-Directory: aarch64/
+s390x-Directory: s390x/
 ppc64le-Directory: ppc64le/
 
-Tags: latest, 28
-Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitFetch: refs/heads/28
-GitCommit: 0ef99659611684364cda45192c3558fc7bcbc2d5
+Tags: 43, rawhide
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/43
+GitCommit: 2ed4770ad9089b377782b204bef1ea738fd30862
 amd64-Directory: x86_64/
-arm32v7-Directory: armhfp/
 arm64v8-Directory: aarch64/
+s390x-Directory: s390x/
 ppc64le-Directory: ppc64le/

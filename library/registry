@@ -1,13 +1,12 @@
-# maintainer: Stephen Day <stephen.day@docker.com> (@stevvooe)
-# maintainer: Olivier Gambier <olivier.gambier@docker.com> (@dmp42)
-# maintainer: Richard Scothern <richard.scothern@gmail.com> (@RichardScothern)
-# maintainer: Aaron Lehmann <aaron.lehmann@docker.com> (@aaronlehmann)
-# maintainer: Derek McGowan <dmcg@drizz.net> (@dmcgowan)
+Maintainers: Milos Gajdos (@milosgajdos),
+             Sebastiaan van Stijn (@thajeztah)
+GitRepo: https://github.com/distribution/distribution-library-image.git
+GitFetch: refs/heads/master
 
-2: git://github.com/docker/distribution-library-image@bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f
-2.6: git://github.com/docker/distribution-library-image@bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f
-2.6.2: git://github.com/docker/distribution-library-image@bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f
-2.5: git://github.com/docker/distribution-library-image@a878b04f22c48dd2fd49581bc74363ab8213b15b
-2.5.2: git://github.com/docker/distribution-library-image@a878b04f22c48dd2fd49581bc74363ab8213b15b
-latest: git://github.com/docker/distribution-library-image@bc5d4f15a7e8d12ed6e5174ac4edab4b6032d09f
+Tags: 3.0.0, 3.0, 3, latest
+Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, s390x, riscv64
+GitCommit: f83883590f5afda69afafbc5aaa5fde3686f47cf
 
+Tags: 2.8.3, 2.8, 2
+Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, s390x
+GitCommit: 39dd72feaab7066334829d6945c54bc51a0aee98

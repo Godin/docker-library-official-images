@@ -1,37 +1,30 @@
-FROM docker:stable-git
+# FYI, this base image is built via ".github/workflows/.bashbrew/action.yml" (from https://github.com/docker-library/bashbrew/tree/master/Dockerfile)
+FROM oisupport/bashbrew:base
 
-RUN apk add --no-cache \
-# bash for running scripts
-		bash \
-# go for compiling bashbrew
-		go libc-dev \
-# ssl for downloading files
-		libressl
-
-ENV GOPATH /go
-ENV PATH $GOPATH/bin:$PATH
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+# wget for downloading files (especially in tests, which run in this environment)
+		ca-certificates \
+		wget \
+# git for cloning source code
+		git \
+# gawk for diff-pr.sh
+		gawk \
+# tar -tf in diff-pr.sh
+		bzip2 \
+# jq for diff-pr.sh
+		jq \
+	; \
+	rm -rf /var/lib/apt/lists/*
 
 ENV DIR /usr/src/official-images
-ENV PATH $DIR/bashbrew/go/bin:$PATH
-
 ENV BASHBREW_LIBRARY $DIR/library
-ENV BASHBREW_CACHE /bashbrew-cache
 
-# make sure our default cache dir exists and is writable by anyone (similar to /tmp)
-RUN mkdir -p "$BASHBREW_CACHE" \
-	&& chmod 1777 "$BASHBREW_CACHE"
-# (this allows us to decide at runtime the exact uid/gid we'd like to run as)
+# crane for diff-pr.sh
+# https://gcr.io/go-containerregistry/crane:latest
+# https://explore.ggcr.dev/?image=gcr.io/go-containerregistry/crane:latest
+COPY --from=gcr.io/go-containerregistry/crane@sha256:fc86bcad43a000c2a1ca926a1e167db26c053cebc3fa5d14285c72773fb8c11d /ko-app/crane /usr/local/bin/
 
 WORKDIR $DIR
 COPY . $DIR
-
-RUN set -ex; \
-	cd bashbrew/go; \
-	export GOPATH="$PWD:$PWD/vendor"; \
-	cd src; \
-	go install -v ./...
-
-VOLUME $BASHBREW_CACHE
-
-RUN ln -s "$PWD/bashbrew/bashbrew-entrypoint.sh" /usr/local/bin/bashbrew-entrypoint.sh
-ENTRYPOINT ["bashbrew-entrypoint.sh"]

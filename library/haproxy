@@ -1,45 +1,70 @@
-# this file is generated via https://github.com/docker-library/haproxy/blob/1fa9d01682376087032e856c0a8c319f97c2ebec/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/haproxy/blob/59112301dd30c2377084770b78fa9cc33fdfb759/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/haproxy.git
 
-Tags: 1.5.19, 1.5
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 968e0bcfee8150b16a8e38fc3386de664ab9bfd1
-Directory: 1.5
+Tags: 3.2-dev16, 3.2-dev, 3.2-dev16-bookworm, 3.2-dev-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 7cf95bc0438dd2aa3973dacf392c74a0c31abb2d
+Directory: 3.2
 
-Tags: 1.5.19-alpine, 1.5-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 5c811fc5a8d46d9a4086cc5e45b5232755768bd9
-Directory: 1.5/alpine
+Tags: 3.2-dev16-alpine, 3.2-dev-alpine, 3.2-dev16-alpine3.21, 3.2-dev-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 7cf95bc0438dd2aa3973dacf392c74a0c31abb2d
+Directory: 3.2/alpine
 
-Tags: 1.6.14, 1.6
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 968e0bcfee8150b16a8e38fc3386de664ab9bfd1
-Directory: 1.6
+Tags: 3.1.7, 3.1, latest, 3.1.7-bookworm, 3.1-bookworm, bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 923a92620c9c0277c5d52f3c8734fefe612cadfd
+Directory: 3.1
 
-Tags: 1.6.14-alpine, 1.6-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 5c811fc5a8d46d9a4086cc5e45b5232755768bd9
-Directory: 1.6/alpine
+Tags: 3.1.7-alpine, 3.1-alpine, alpine, 3.1.7-alpine3.21, 3.1-alpine3.21, alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 923a92620c9c0277c5d52f3c8734fefe612cadfd
+Directory: 3.1/alpine
 
-Tags: 1.7.11, 1.7
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 968e0bcfee8150b16a8e38fc3386de664ab9bfd1
-Directory: 1.7
+Tags: 3.0.10, 3.0, lts, 3.0.10-bookworm, 3.0-bookworm, lts-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: dccf0f4e3aa2c74e30a89954cba69305e52edf7f
+Directory: 3.0
 
-Tags: 1.7.11-alpine, 1.7-alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 5c811fc5a8d46d9a4086cc5e45b5232755768bd9
-Directory: 1.7/alpine
+Tags: 3.0.10-alpine, 3.0-alpine, lts-alpine, 3.0.10-alpine3.21, 3.0-alpine3.21, lts-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: dccf0f4e3aa2c74e30a89954cba69305e52edf7f
+Directory: 3.0/alpine
 
-Tags: 1.8.13, 1.8, 1, latest
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 50a14f801a7e7215c998969e5bdc923be8184646
-Directory: 1.8
+Tags: 2.8.15, 2.8, 2.8.15-bookworm, 2.8-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 82d8d0e917b2dbba726f6cf853688d1bb6eed5fc
+Directory: 2.8
 
-Tags: 1.8.13-alpine, 1.8-alpine, 1-alpine, alpine
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 50a14f801a7e7215c998969e5bdc923be8184646
-Directory: 1.8/alpine
+Tags: 2.8.15-alpine, 2.8-alpine, 2.8.15-alpine3.21, 2.8-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 82d8d0e917b2dbba726f6cf853688d1bb6eed5fc
+Directory: 2.8/alpine
+
+Tags: 2.6.22, 2.6, 2.6.22-bookworm, 2.6-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: b2272eca1be0415af128438e91ffb721d758eef7
+Directory: 2.6
+
+Tags: 2.6.22-alpine, 2.6-alpine, 2.6.22-alpine3.21, 2.6-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: b2272eca1be0415af128438e91ffb721d758eef7
+Directory: 2.6/alpine
+
+Tags: 2.4.29, 2.4, 2.4.29-bookworm, 2.4-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: d5e3fa1fab9349226162c5a160ed667d0f62e688
+Directory: 2.4
+
+Tags: 2.4.29-alpine, 2.4-alpine, 2.4.29-alpine3.21, 2.4-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: d5e3fa1fab9349226162c5a160ed667d0f62e688
+Directory: 2.4/alpine
+
+Tags: 2.2.34, 2.2, 2.2.34-bullseye, 2.2-bullseye
+Architectures: amd64, arm32v7, arm64v8, i386
+GitCommit: fcee7759df612f1047d4b41b42c9f628dac925bf
+Directory: 2.2
